@@ -1,29 +1,13 @@
 {
-  "name": "@callmekory/logger",
-  "version": "1.0.0",
+  "author": "callmekory",
+  "bugs": {
+    "url": "https://github.com/callmekory/node-logger/issues"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "moment": "^2.24.0"
+  },
   "description": "Simple console logger",
-  "main": "lib/index.js",
-  "types": "lib",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/callmekory/node-logger.git"
-  },
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
-  },
-  "files": [
-    "lib/**/*"
-  ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^13.9.1",
     "@types/node-fetch": "^2.5.5",
@@ -37,8 +21,28 @@
     "tslint-plugin-prettier": "^2.2.0",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
-    "chalk": "^3.0.0",
-    "moment": "^2.24.0"
-  }
+  "files": [
+    "lib/**/*"
+  ],
+  "homepage": "https://github.com/callmekory/node-logger#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "@callmekory/logger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callmekory/node-logger.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src"
+  },
+  "types": "lib",
+  "version": "1.0.0"
 }
