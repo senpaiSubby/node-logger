@@ -13,7 +13,7 @@ export class Log {
   }
 
   // Logging Time Format
-  private static time() {
+  public static time() {
     return moment().format('M-DD h:mm:ss A')
   }
 
@@ -23,10 +23,6 @@ export class Log {
 
   public static newLine() {
     return console.log('')
-  }
-
-  public static header(text: string) {
-    return console.log(text)
   }
 
   public static error(name: string, message?: string | Error, stacktrace = null) {

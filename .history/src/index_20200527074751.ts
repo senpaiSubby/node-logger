@@ -13,7 +13,7 @@ export class Log {
   }
 
   // Logging Time Format
-  private static time() {
+  public static time() {
     return moment().format('M-DD h:mm:ss A')
   }
 

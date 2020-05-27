@@ -44,5 +44,5 @@
     "version": "npm run format && git add -A src"
   },
   "types": "lib",
-  "version": "1.0.6"
+  "version": "1.0.1"
 }

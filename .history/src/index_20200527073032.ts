@@ -6,15 +6,15 @@ import chalk from 'chalk'
 import moment from 'moment'
 import { format } from 'util'
 
-export class Log {
+export default class Log {
   // Throw error if someone tries to create an instance
   constructor() {
     throw new Error(`${this.constructor.name} class cannot be instantiated`)
   }
 
   // Logging Time Format
-  private static time() {
-    return moment().format('M-DD h:mm:ss A')
+  public static time() {
+    return moment().format('MM-DD h:mm:ss A')
   }
 
   public static ok(name: string, message?: string | Error) {
@@ -23,10 +23,6 @@ export class Log {
 
   public static newLine() {
     return console.log('')
-  }
-
-  public static header(text: string) {
-    return console.log(text)
   }
 
   public static error(name: string, message?: string | Error, stacktrace = null) {
